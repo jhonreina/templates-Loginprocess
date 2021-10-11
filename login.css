@@ -1,12 +1,58 @@
 body {
     background:white;
     margin: 0;
-    display: flex;
     font-family:Arial, Helvetica, sans-serif;
 }
 * {
     box-sizing: border-box;
 }
+
+.box  {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        }
+    
+    .flex-item:nth-child(1) {
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 2 auto;
+        -ms-flex: 0 2 auto;
+        flex: 0 2 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+        }
+    
+    .flex-item:nth-child(2) {
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+        }
+
+
 .contenedor {
     width: 100%;
     padding: 15px;
@@ -16,11 +62,10 @@ body {
 
 .formulario {
     background:#f4fbdc;
-    margin-top: 150px;
     font-size: 40px;
     padding: 3px;  
     border-radius: 5px;
-    margin: 300px   0px 500px 200px;
+
 }
 
 h1{
